@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Quiet Minds Studio — gentle tools for loud minds. Coming soon." />
+  <title>Quiet Minds Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <canvas id="c"></canvas>
+
+  <div class="center">
+    <div class="studio-name">quiet minds</div>
+
+    <div class="dot-container" onclick="jumpDot()" title="tap dot!">
+
+      <!-- Dot the frog -->
+      <svg class="frog-svg" id="dot" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="1" width="8" height="2" fill="#6DDC6D"/>
+        <rect x="3" y="3" width="10" height="1" fill="#6DDC6D"/>
+        <rect x="2" y="4" width="12" height="1" fill="#6DDC6D"/>
+        <rect x="2" y="5" width="2" height="2" fill="white"/>
+        <rect x="12" y="5" width="2" height="2" fill="white"/>
+        <rect x="3" y="5" width="9" height="2" fill="#6DDC6D"/>
+        <rect x="3" y="5" width="1" height="1" fill="#222"/>
+        <rect x="13" y="5" width="1" height="1" fill="#222"/>
+        <rect x="2" y="7" width="12" height="3" fill="#6DDC6D"/>
+        <rect x="5" y="8" width="2" height="1" fill="#F4A7B9"/>
+        <rect x="9" y="8" width="2" height="1" fill="#F4A7B9"/>
+        <rect x="7" y="9" width="2" height="1" fill="#222"/>
+        <rect x="2" y="10" width="5" height="1" fill="#6DDC6D"/>
+        <rect x="9" y="10" width="5" height="1" fill="#6DDC6D"/>
+        <rect x="3" y="11" width="3" height="1" fill="#4BB84B"/>
+        <rect x="10" y="11" width="3" height="1" fill="#4BB84B"/>
+      </svg>
+
+      <!-- Dot's lily pad -->
+      <svg class="lilypad-svg" viewBox="0 0 28 14" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="3" width="22" height="8" fill="#5BAF82"/>
+        <rect x="2" y="4" width="1" height="6" fill="#5BAF82"/>
+        <rect x="25" y="4" width="1" height="6" fill="#5BAF82"/>
+        <rect x="4" y="2" width="20" height="1" fill="#5BAF82"/>
+        <rect x="4" y="11" width="20" height="1" fill="#5BAF82"/>
+        <rect x="5" y="1" width="6" height="1" fill="#5BAF82"/>
+        <rect x="17" y="1" width="6" height="1" fill="#5BAF82"/>
+        <rect x="5" y="12" width="6" height="1" fill="#5BAF82"/>
+        <rect x="17" y="12" width="6" height="1" fill="#5BAF82"/>
+        <rect x="13" y="0" width="2" height="1" fill="#5BAF82"/>
+        <rect x="13" y="13" width="2" height="1" fill="#5BAF82"/>
+        <!-- slit -->
+        <rect x="13" y="1" width="1" height="3" fill="#5BB8D0"/>
+        <rect x="14" y="1" width="1" height="3" fill="#5BB8D0"/>
+        <!-- darker edges -->
+        <rect x="2" y="4" width="1" height="1" fill="#3a7a55"/>
+        <rect x="25" y="4" width="1" height="1" fill="#3a7a55"/>
+        <rect x="4" y="2" width="1" height="1" fill="#3a7a55"/>
+        <rect x="23" y="2" width="1" height="1" fill="#3a7a55"/>
+        <!-- pink salmon detail -->
+        <rect x="10" y="5" width="3" height="2" fill="#F4A7B9"/>
+        <rect x="16" y="6" width="2" height="2" fill="#F4A7B9"/>
+      </svg>
+    </div>
+
+    <div class="coming-soon">coming soon to a lily pad near you</div>
+    <div class="byvi">built by vi &middot; quiet minds studio</div>
+  </div>
+
+  <script src="pond.js"></script>
+</body>
+</html>
