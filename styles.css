@@ -49,27 +49,6 @@ canvas {
   text-shadow: 3px 3px 0px #F4A7B9;
 }
 
-.dot-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  pointer-events: auto;
-}
-
-.frog-svg {
-  image-rendering: pixelated;
-  width: clamp(56px, 12vw, 80px);
-  height: clamp(56px, 12vw, 80px);
-}
-
-.lilypad-svg {
-  image-rendering: pixelated;
-  width: clamp(80px, 18vw, 112px);
-  height: auto;
-  margin-top: -6px;
-}
-
 .coming-soon {
   font-size: clamp(6px, 1.8vw, 10px);
   color: #ffffff;
@@ -88,33 +67,10 @@ canvas {
   color: #3a2a1e;
   opacity: 0.5;
   letter-spacing: 1px;
-}
-
-.jump {
-  animation: frogJump 0.4s ease-out;
-}
-
-@keyframes frogJump {
-  0%   { transform: translateY(0); }
-  40%  { transform: translateY(-30px) scale(1.1); }
-  70%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  line-height: 2;
 }
 
 @media (max-width: 480px) {
-  .center {
-    gap: 1.2rem;
-    padding: 1.5rem 1rem;
-  }
-
-  .coming-soon {
-    border-width: 2px;
-    box-shadow: 3px 3px 0px #3a7a55;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
-  .center {
-    gap: 1.5rem;
-  }
+  .center { gap: 1.2rem; padding: 1.5rem 1rem; }
+  .coming-soon { border-width: 2px; box-shadow: 3px 3px 0px #3a7a55; }
 }
